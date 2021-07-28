@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Bethpen.github.io/react-tours",
   "name": "reminder",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
     "test": "react-scripts test",
@@ -32,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "netlify-cli": "^5.2.3"
   }
 }
